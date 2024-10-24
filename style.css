@@ -1,0 +1,67 @@
+*{
+background-color: rgb(187, 181, 181);
+}
+.MainContainer {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    
+}
+
+p{
+    color: rgba(72, 116, 72, 0.767);
+    background-color: white;
+}
+
+.NavBar {
+    background-color:  rgba(72, 116, 72, 0.767); /* Background color for the nav bar */
+    padding: 50px; /* Padding for the nav bar */
+    text-align: left; /* Center text in the nav bar */
+}
+.Content {
+    display: flex; /* Arrange children in a row */
+    flex: 8; /* Allow the content area to grow */
+    gap: 5px;
+}
+
+.Center {
+    flex:1; /* Take up remaining space */
+    padding: 20px; /* Padding for the center section */
+    box-sizing: border-box; /* Include padding in width calculations */
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    
+    
+}
+
+/* Optional: Add some borders to visually separate sections */
+.Left {
+    flex: 0 0 200px;
+    /* border-right: 5px solid #030303; Border to separate left and center */
+    padding: 20px;
+}
+
+.Right {
+    flex: 0 0 200px; 
+    /* border-left: 5px solid #030303; Border to separate center and right */
+    padding: 20px;
+}
+
+.Text{
+    flex:1;
+    text-align: justify;
+    border-radius: 10px;
+    background-color: white;
+    color: white;
+    padding-top: 20px;
+}
+
+.imgclass{
+    float: left;
+    width: 200px; /* Set a fixed width for the image */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between the image and text */
+    padding-top: 10px;
+    background-color: white;
+    color: white;
+}
