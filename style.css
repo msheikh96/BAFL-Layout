@@ -1,10 +1,9 @@
 *{
-background-color: rgb(187, 181, 181);
+background-color: rgb(210, 204, 204);
 }
 .MainContainer {
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    
+    flex-direction: column; 
 }
 
 p{
@@ -12,38 +11,29 @@ p{
     background-color: white;
 }
 
-.NavBar {
-    background-color:  rgba(72, 116, 72, 0.767); /* Background color for the nav bar */
-    padding: 50px; /* Padding for the nav bar */
-    text-align: left; /* Center text in the nav bar */
-}
+
 .Content {
-    display: flex; /* Arrange children in a row */
-    flex: 8; /* Allow the content area to grow */
+    display: flex; 
+    flex: 8; 
     gap: 5px;
+    
 }
 
 .Center {
-    flex:1; /* Take up remaining space */
-    padding: 20px; /* Padding for the center section */
-    box-sizing: border-box; /* Include padding in width calculations */
+    flex:1; 
+    padding: 20px; 
+    box-sizing: border-box; 
     display: flex;
     flex-direction: column;
     padding-top: 10px;
-    
-    
 }
-
-/* Optional: Add some borders to visually separate sections */
 .Left {
     flex: 0 0 200px;
-    /* border-right: 5px solid #030303; Border to separate left and center */
-    padding: 20px;
+    padding: 2px;
 }
 
 .Right {
     flex: 0 0 200px; 
-    /* border-left: 5px solid #030303; Border to separate center and right */
     padding: 20px;
 }
 
@@ -53,15 +43,86 @@ p{
     border-radius: 10px;
     background-color: white;
     color: white;
-    padding-top: 20px;
+    padding-top: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 15px; 
 }
 
 .imgclass{
     float: left;
-    width: 200px; /* Set a fixed width for the image */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 10px; /* Space between the image and text */
+    width: 200px; 
+    height: auto; 
+    margin-right: 10px; 
+    margin-left: 10px; 
     padding-top: 10px;
     background-color: white;
     color: white;
+}
+
+
+.Left ul
+{
+    list-style-type: none;
+}
+
+.Left li {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    
+}
+
+.Right {
+    padding: 25px;
+    width: 10%; 
+    text-align: center;
+}
+
+.Right i {
+    display: block; 
+    font-size: 55px; 
+    padding: 10px
+}
+
+
+
+.NavBar {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    background-color: #78916a;
+    padding: 20px; 
+    text-align: left; 
+}
+
+.websiteicon {  
+    color: #505c49;
+    font-size: 25px;
+    text-align: left; 
+    background-color:#78916a;
+}
+
+.usericon {
+    color: #505c49;
+    font-size: 20px;
+    text-align: center; 
+    display: flex;
+    flex-direction: column; 
+    background-color:#78916a;
+
+}
+.fa-globe,.fa-user
+{
+    background-color:#78916a;
+    font-size: 12px;
+    padding-right: 15px;
+}
+
+
+.Left img {
+    width: 40px; 
+    height: auto;
+    margin-right: 10px;
+    border-radius: 10%;
 }
